@@ -339,9 +339,9 @@
 {
 	@autoreleasepool
 	{
-		double length = label.text.length;
-		NSTimeInterval sleep = length * 0.04 + 0.5;
-		[NSThread sleepForTimeInterval:sleep];
+        //FIX
+        NSTimeInterval sleep = 5 * 0.04 + 0.5;
+        [NSThread sleepForTimeInterval:sleep];      
 
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[self hudHide];
